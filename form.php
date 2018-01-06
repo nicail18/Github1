@@ -23,12 +23,17 @@
 		<input type="reset" value="Clear" />
 	</p>
 	
+	
+	
+	
+</form>
 	<?php
 		//require('db.php');
 	?>
-</form>
-<div id="footer">
-</div>
+	
+	<p>Password: 12345</p>
+<?php echo "<p>Encrypted sha1: ".sha1('12345')."</p>"; ?>
+<?php echo "<p>Encrypted md5: ".md5('12345')."</p>"; ?>
 </body>
 
 </html>
